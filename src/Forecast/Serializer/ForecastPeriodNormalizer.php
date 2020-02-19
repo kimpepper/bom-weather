@@ -9,6 +9,9 @@ use BomWeather\Forecast\ForecastPeriod;
  */
 class ForecastPeriodNormalizer extends BaseNormalizer {
 
+  /**
+   * {@inheritdoc}
+   */
   protected $supportedInterfaceOrClass = ForecastPeriod::class;
 
   /**

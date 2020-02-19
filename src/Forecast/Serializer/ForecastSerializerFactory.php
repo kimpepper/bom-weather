@@ -23,9 +23,9 @@ class ForecastSerializerFactory {
    */
   public static function create($rootNode = 'product') {
 
-    $encoders = [new XmlEncoder($rootNode)];
+    $encoders = [new XmlEncoder([XmlEncoder::ROOT_NODE_NAME => $rootNode])];
     $normalizers = [
-      new DateTimeNormalizer(),
+      new DateTimeNormalizer([DateTimeNormalizer::FORMAT_KEY => \DateTime::RFC3339]),
       new ForecastNormalizer(),
       new AreaNormalizer(),
       new ForecastPeriodNormalizer(),

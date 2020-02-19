@@ -208,8 +208,7 @@ class ForecastPeriod {
    *
    * @return $this
    */
-  public function setPrecipitationRange(string $precipitationRange
-  ): ForecastPeriod {
+  public function setPrecipitationRange(string $precipitationRange): ForecastPeriod {
     $this->precipitationRange = $precipitationRange;
     return $this;
   }
@@ -255,8 +254,7 @@ class ForecastPeriod {
    *
    * @return $this
    */
-  public function setAirTempMaximum(int $airTempMaximum
-  ): ForecastPeriod {
+  public function setAirTempMaximum(int $airTempMaximum): ForecastPeriod {
     $this->airTempMaximum = $airTempMaximum;
     return $this;
   }
